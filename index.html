@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  
+  <title>League Champion Ability Checker</title>
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap theme -->
+  <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+  
+  <!-- Google font-->
+  <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/theme.css" rel="stylesheet">
+  
+</head>
+  
+<body>
+  <div class = "bg"></div>
+  
+  <div class ="container">
+    <h1>League Champion Ability Checker</h1>
+    <p>What champion do you want to load? </p>
+    <input id="searchterm" type="text" size="20" maxlength="20" autofocus value="Aatrox" />
+    <button type="button" id="champSearch" class = "btn btn-sm btn-default">Get Champion Data</button>
+    
+<!--
+    <p>What Summoner's Player Icon do you want to see? </p>
+    <input id="searchName" type="text" size="20" maxlength="20" autofocus value="FNC Rory Mercury" />
+    <button type="button" id="playerSearch" class = "btn btn-sm btn-default">Get Player Icon</button>
+    <h1 id = "summName">Summoner Name</h1>
+    <span id ="profIcon" class = "col-md-12 col-sm-12"></span>
+-->
+    
+    <div class = "ChampBioAndSlpash">
+      <h1 id = champName>Champion Name and Title</h1>
+      
+      <span id = "champSplash"></span>
+      
+      <button type ="button" id ="lore" class = "btn btn-sm btn-default">Show/Hide Lore</button>
+      <div id="champLore">
+        <h2>Lore:</h2>
+        <p id = "champLoreData"></p>
+      </div>
+    </div>
+      
+    <button type ="button" id ="abilities" class = "btn btn-sm btn-default">Show/Hide Abilities</button>
+    <div class = 'spells'>
+        <span id = "passiveImg" class = "col-md-1 col-sm-3"></span>
+        <div class = "col-md-11 col-sm-9">
+          <h3 id = "passiveName">Passive: </h3>
+          <p id = "passiveDescription" class = "bot-spacing">Description: </p>
+        </div>
+      
+        <span id = "spell1Img"  class = "col-md-1 col-sm-3"></span>
+        <div class = "col-md-11 col-sm-9">
+          <h3 id = "spell1Name">First Ability: </h3>
+          <p id = "spell1Description">Description: </p>
+          <p id = "spell1Cd" class = "bot-spacing">Cooldown: </p>
+        </div>
+      
+        <span id = "spell2Img"  class = "col-md-1 col-sm-3"></span>
+        <div class = "col-md-11 col-sm-9">
+          <h3 id = "spell2Name">Second Ability: </h3>
+          <p id = "spell2Description">Description: </p>
+          <p id = "spell2Cd" class = "bot-spacing">Cooldown: </p>
+        </div>
+      
+        <span id = "spell3Img"  class = "col-md-1 col-sm-3"></span>
+        <div class = "col-md-11 col-sm-9">
+          <h3 id = "spell3Name">Third Ability: </h3>
+          <p id = "spell3Description">Description: </p>
+          <p id = "spell3Cd" class = "bot-spacing">Cooldown: </p>
+        </div>
+      
+        <span id = "spell4Img"  class = "col-md-1 col-sm-3"></span>
+        <div class = "col-md-11 col-sm-9">
+          <h3 id = "spell4Name">Ultimate Ability: </h3>
+          <p id = "spell4Description">Description: </p>
+          <p id = "spell4Cd" class = "bot-spacing">Cooldown: </p>
+        </div>
+    </div>
+  </div>
+  
+  
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <!-- Import jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<!--  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>-->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/docs.min.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="js/ie10-viewport-bug-workaround.js"></script>
+  <script src ="js/index.js"></script>
+  <footer>
+      <div class = "container">
+        <h4>Made by Doug Andrews</h4>
+        <a href="ref.html">Resources Used</a>
+      </div>
+  </footer>
+</body>
+  
+    
+</html>
